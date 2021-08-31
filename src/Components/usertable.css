@@ -1,0 +1,33 @@
+.users {
+    width: 100%;
+    justify-content: space-between;
+    border: 3px solid black;
+    padding: 5%;
+}
+
+p {
+    width: 100%;
+}
+
+.user-type {
+    display: table-column;
+}
+.user-name {
+    border: 1px solid black;
+    display: flex;
+    padding: 15px 15px;
+    justify-content: space-between;
+    width: 80%;
+}
+.user-table {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    border: 1px solid black;
+    padding: 15px 15px;
+}
+.user-types {
+    width: 15%;
+    font-size: 16px;
+    text-align-last:center;
+}
