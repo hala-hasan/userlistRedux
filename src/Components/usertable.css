@@ -31,3 +31,29 @@ p {
     font-size: 16px;
     text-align-last:center;
 }
+
+.fliterd-table{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 25px;
+}
+button {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    margin: 10px 10px;
+    justify-content: space-between;
+}
+.user-filterd {
+
+    width: 80%;
+    border: 1px solid black;
+    padding: 15px 15px;
+    text-align: center;
+}
+.fitlered-wrapper{
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5%;
+}

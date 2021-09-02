@@ -1,13 +1,23 @@
 import './App.css';
 import React from 'react';
-import data from './Data/data.json';
+import { useEffect } from 'react';
 import Usertable from './Components/usertable';
+import { useDispatch } from 'react-redux';
+import data from './Data/data.json';
 
 const App = () => {
-  console.log(data);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({
+      type: 'GET_DATA',
+      payload: data
+  })
+}, );
+
   return (
     <div className='wrapper'>
-      <Usertable data={data} />
+      <Usertable data={data.data} dispatch={dispatch} />
     </div>
   );
 };
